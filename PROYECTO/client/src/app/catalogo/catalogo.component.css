@@ -1,0 +1,82 @@
+.ejemplo {
+    width: 50%;
+}
+
+.derecha {
+    position: absolute;
+    top: 0%;
+    right: 30px;
+    bottom: 250px;
+    width: 50px;
+}
+
+button {
+    margin: 16px 8px;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+    background: #bebebe;
+}
+
+.example-container {
+    height: 400px;
+    width: 550px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+}
+
+td.mat-column-star {
+    width: 20px;
+    padding-right: 8px;
+}
+
+th.mat-column-position, td.mat-column-position {
+    padding-left: 8px;
+}
+
+.mat-table-sticky:first-child {
+    border-right: 1px solid #c5c5c5;
+}
+
+.mat-table-sticky:last-child {
+    border-left: 1px solid #b1b0b0 rgb(187, 184, 185) darken-3;
+}
+
+.cabecera {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: rgb(102, 102, 102);
+}
+
+.cuerpo {
+    background-color: rgba(172, 172, 172, 0.904);
+    position: absolute;
+    top: 60px;
+    left: 250px;
+    right: 0;
+    bottom: 50px;
+}
+.pie {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #c5c5c5;
+}
+
+.lateral {
+    position: absolute;
+    top: 60px;
+    bottom: 50px;
+    left: 0;
+    width: 250px;
+    background-color: #cecece;
+   
+}

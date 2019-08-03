@@ -1,0 +1,17 @@
+.example-tab-icon {
+    margin-right: 8px;
+}
+
+.espacio {
+    padding: 25px 50px 75px 100px;
+    border: 1px solid rgb(47, 48, 47);
+}
+.example-card {
+    max-width: 400px;
+  }
+  
+
+.example-header-image{
+    background-image: url('../../assets/icon/images.png');
+    background-size : cover
+}
