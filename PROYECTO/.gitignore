@@ -1,45 +1,34 @@
-/serve/node_modules
-/client/node_modules
+# Dependencias
+client/node_modules/
+serve/node_modules/
+node_modules/
 
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# Variables de entorno
+.env
+.env.*
+serve/.env
 
-# compiled output
-/dist
-/tmp
-/out-tsc
+# Compilados Angular
+client/dist/
+client/.angular/
+out-tsc/
 
-# dependencies
-/node_modules
-
-# profiling files
-chrome-profiler-events.json
-speed-measure-plugin.json
-
-# IDEs and editors
-/client/.idea
-/client/.project
-/client/.classpath
-/client/.c9/
-/client/*.launch
-/client/.settings/
-/client/*.sublime-workspace
-
-# IDE - VSCode
-/client/.vscode/*
-/client/!.vscode/settings.json
-/client/!.vscode/tasks.json
-/client/!.vscode/launch.json
-/client/!.vscode/extensions.json
-# misc
-/client/.sass-cache
-/client/connect.lock
-/client/coverage
-/client/libpeerconnection.log
-/client/npm-debug.log
-/client/yarn-error.log
-/client/testem.log
-/client/typings
-
-# System Files
+# Sistema operativo
 .DS_Store
 Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Tests
+client/coverage/
+client/e2e/
+
+# Angular cache
+client/.sass-cache/

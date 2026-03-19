@@ -1,5 +1,5 @@
-import { Component, OnInit,Inject } from '@angular/core';
-import {  MAT_DIALOG_DATA, MatDialogRef } from "@angular/material";
+import { Component, OnInit, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-dialogo',
@@ -7,19 +7,19 @@ import {  MAT_DIALOG_DATA, MatDialogRef } from "@angular/material";
   styleUrls: ['./dialogo.component.css']
 })
 export class DialogoComponent implements OnInit {
-  panelOpenstate: false;
+  panelOpenState = false;
   nombreColumna: string[];
 
-  constructor(public dialogRef: MatDialogRef<DialogoComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any) { }
+  constructor(
+    public dialogRef: MatDialogRef<DialogoComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any
+  ) {}
 
   ngOnInit() {
-    console.log(this.data.id);
     this.nombreColumna = Object.keys(this.data);
-    console.log(this.nombreColumna);
-  }
-  onNoclik(){
-    this.dialogRef.close();
   }
 
+  onNoClik() {
+    this.dialogRef.close();
+  }
 }
